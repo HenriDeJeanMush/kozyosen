@@ -1,0 +1,12 @@
+unfair\kozyosenplugin\listener\SpawnPlayer.class
+unfair\kozyosenplugin\Utils\start.class
+unfair\kozyosenplugin\Kozyosen_plugin.class
+unfair\kozyosenplugin\commands\getCommand.class
+unfair\kozyosenplugin\Utils\donewar.class
+unfair\kozyosenplugin\Utils\setKits.class
+unfair\kozyosenplugin\Utils\setup.class
+unfair\kozyosenplugin\commands\selfkillcommand.class
+unfair\kozyosenplugin\Utils\setTeam.class
+unfair\kozyosenplugin\listener\getGrayConcrete.class
+unfair\kozyosenplugin\listener\getBeconBreak.class
+unfair\kozyosenplugin\Utils\setSpawnLocation.class

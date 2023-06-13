@@ -1,0 +1,9 @@
+name: kozyosen-plugin
+version: '1.0-SNAPSHOT'
+main: unfair.kozyosenplugin.Kozyosen_plugin
+api-version: 1.19
+
+commands:
+  kozyosen:
+    permission: op
+  selfkill:

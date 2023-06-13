@@ -1,0 +1,9 @@
+name: kozyosen-plugin
+version: '${project.version}'
+main: unfair.kozyosenplugin.Kozyosen_plugin
+api-version: 1.19
+
+commands:
+  kozyosen:
+    permission: op
+  selfkill:
