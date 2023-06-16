@@ -1,12 +1,13 @@
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Kozyosen_plugin.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\listener\getGrayConcrete.java
-C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\commands\getCommand.java
-C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\start.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\setup.java
+C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\resetTeam.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\commands\selfkillcommand.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\setTeam.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\donewar.java
-C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\setKits.java
-C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\listener\SpawnPlayer.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\listener\getBeconBreak.java
 C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\setSpawnLocation.java
+C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\commands\getCommand.java
+C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\start.java
+C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\Utils\setKits.java
+C:\Plugins\kozyosen-plugin\src\main\java\unfair\kozyosenplugin\listener\SpawnPlayer.java

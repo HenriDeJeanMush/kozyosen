@@ -20,14 +20,13 @@ import java.util.logging.Logger;
 public final class Kozyosen_plugin extends JavaPlugin {
 
     public static Kozyosen_plugin plugin;
-    public static ScoreboardManager scorem = Bukkit.getScoreboardManager();
-    public static Scoreboard board = scorem.getNewScoreboard();
-    public static List<UUID> Waitlist = new ArrayList<UUID>();
-    public static org.bukkit.scoreboard.Team red = board.registerNewTeam("Red");
-    public static org.bukkit.scoreboard.Team blue = board.registerNewTeam("Blue");
-    public static List<UUID> Redplayers = new ArrayList<UUID>();
-    public static List<UUID> Blueplayers = new ArrayList<UUID>();
-    public static boolean onWar = false;
+    public static Scoreboard board ;
+    public static List<UUID> Waitlist = null;
+    public static org.bukkit.scoreboard.Team red ;
+    public static org.bukkit.scoreboard.Team blue;
+    public static List<UUID> Redplayers ;
+    public static List<UUID> Blueplayers ;
+    public static boolean onWar;
     @Override
     public void onEnable() {
         // Plugin startup logic
@@ -40,14 +39,23 @@ public final class Kozyosen_plugin extends JavaPlugin {
         getCommand("kozyosen").setExecutor(new getCommand());
         getCommand("selfkill").setExecutor(new selfkillcommand());
         Logger.getLogger("[kozyosen-plugin]enable");
-
-        //team
-        Waitlist.clear();
-        red.setColor(ChatColor.RED);
-        blue.setColor(ChatColor.BLUE);
-        for(Player online : Bukkit.getOnlinePlayers()){
-            online.setScoreboard(board);
-        }
+        Bukkit.getScheduler().runTask(this,()-> {
+            ScoreboardManager manager = Bukkit.getScoreboardManager();
+            board = manager.getNewScoreboard();
+            Waitlist = new ArrayList<UUID>();
+            red = board.registerNewTeam("Red");
+            blue = board.registerNewTeam("Blue");
+            Redplayers = new ArrayList<UUID>();
+            Blueplayers = new ArrayList<UUID>();
+            onWar = false;
+            //team
+            Waitlist.clear();
+            red.setColor(ChatColor.RED);
+            blue.setColor(ChatColor.BLUE);
+            for(Player online : Bukkit.getOnlinePlayers()){
+                online.setScoreboard(board);
+            }
+        } ) ;
     }
 
     @Override

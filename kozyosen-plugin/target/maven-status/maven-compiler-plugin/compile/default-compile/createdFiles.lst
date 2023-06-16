@@ -1,4 +1,5 @@
 unfair\kozyosenplugin\listener\SpawnPlayer.class
+unfair\kozyosenplugin\Utils\resetTeam.class
 unfair\kozyosenplugin\Utils\start.class
 unfair\kozyosenplugin\Kozyosen_plugin.class
 unfair\kozyosenplugin\commands\getCommand.class
