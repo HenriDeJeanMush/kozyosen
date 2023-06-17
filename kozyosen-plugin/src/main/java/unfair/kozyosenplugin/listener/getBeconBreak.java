@@ -28,9 +28,9 @@ public class getBeconBreak implements Listener {
         if(!Kozyosen_plugin.onWar)return;;
         if(event.getBlock().getType().equals(Material.BEACON)){
             if(Kozyosen_plugin.red.hasPlayer(event.getPlayer())){
-                donewar.done(Kozyosen_plugin.red);
+                donewar.done(Kozyosen_plugin.red,event.getPlayer());
             }else if(Kozyosen_plugin.blue.hasPlayer(event.getPlayer())){
-                donewar.done(Kozyosen_plugin.blue);
+                donewar.done(Kozyosen_plugin.blue,event.getPlayer());
             }
         }
     }
@@ -45,7 +45,7 @@ public class getBeconBreak implements Listener {
                     this.cooldown.put(player.getUniqueId(), System.currentTimeMillis());
 
                     for (Player players : Bukkit.getOnlinePlayers()) {
-                        players.sendMessage(ChatColor.RED + "RedTeamがビーコンを壊している！");
+                        players.sendMessage(ChatColor.RED +player.getDisplayName()+ "がビーコンを壊している！");
                     }
                 }else {
                         long timeElapsed = System.currentTimeMillis() - cooldown.get(player.getUniqueId());
@@ -53,7 +53,7 @@ public class getBeconBreak implements Listener {
                         if(timeElapsed > 2000){
                             this.cooldown.put(player.getUniqueId(),System.currentTimeMillis());
                             for (Player players : Bukkit.getOnlinePlayers()) {
-                                players.sendMessage(ChatColor.RED + "RedTeamがビーコンを壊している！");
+                                players.sendMessage(ChatColor.RED+player.getDisplayName() + "がビーコンを壊している！");
                             }
                         }
                     }
@@ -63,7 +63,7 @@ public class getBeconBreak implements Listener {
                     this.cooldown.put(player.getUniqueId(), System.currentTimeMillis());
 
                     for (Player players : Bukkit.getOnlinePlayers()) {
-                        players.sendMessage(ChatColor.BLUE+"Blueeamがビーコンを壊している！");
+                        players.sendMessage(ChatColor.BLUE+player.getDisplayName()+"がビーコンを壊している！");
                     }
                 }else {
                     long timeElapsed = System.currentTimeMillis() - cooldown.get(player.getUniqueId());
@@ -71,7 +71,7 @@ public class getBeconBreak implements Listener {
                     if(timeElapsed > 2000){
                         this.cooldown.put(player.getUniqueId(),System.currentTimeMillis());
                         for (Player players : Bukkit.getOnlinePlayers()) {
-                            players.sendMessage(ChatColor.BLUE + "RedTeamがビーコンを壊している！");
+                            players.sendMessage(ChatColor.BLUE+player.getDisplayName() + "がビーコンを壊している！");
                         }
                     }
                 }

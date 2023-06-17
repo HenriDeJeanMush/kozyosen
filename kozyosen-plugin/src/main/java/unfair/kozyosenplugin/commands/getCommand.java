@@ -22,6 +22,7 @@ public class getCommand implements CommandExecutor {
                 commandSender.sendMessage("/kozyosen setteam");
                 commandSender.sendMessage("/kozyosen start confirm");
                 commandSender.sendMessage("まずsetkit,setspawnをするのとビーコンを各チームに置きます");
+                commandSender.sendMessage("setkitするときはビーコンだけ壊せるつるはしをインベントリーに入れといてください");
                 commandSender.sendMessage("自チームのビーコンも壊せてしまうので気を付けてください");
                 commandSender.sendMessage("--始め方--");
                 commandSender.sendMessage("グレーのコンクリートブロックの上に参加者を立たせてsetteamしたらstart confirmでスタート");
@@ -45,6 +46,7 @@ public class getCommand implements CommandExecutor {
                 }
                 if(args[0].equalsIgnoreCase("resetteam")){
                     resetTeam.reset();
+                    return true;
                 }
             }
         }

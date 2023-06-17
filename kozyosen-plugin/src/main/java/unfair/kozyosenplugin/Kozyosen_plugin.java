@@ -52,7 +52,7 @@ public final class Kozyosen_plugin extends JavaPlugin {
             Waitlist.clear();
             red.setColor(ChatColor.RED);
             blue.setColor(ChatColor.BLUE);
-            for(Player online : Bukkit.getOnlinePlayers()){
+            for(Player online : Bukkit.getOnlinePlayers()) {
                 online.setScoreboard(board);
             }
         } ) ;

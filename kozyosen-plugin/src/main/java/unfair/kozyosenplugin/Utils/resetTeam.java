@@ -16,6 +16,7 @@ public class resetTeam {
         }
         Kozyosen_plugin.Redplayers.clear();
         Kozyosen_plugin.Blueplayers.clear();
+
     }
 
 }

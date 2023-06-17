@@ -31,7 +31,9 @@ public class setTeam {
         }
         sender.sendMessage(ChatColor.GREEN+"team振り分け完了");
         Kozyosen_plugin.Waitlist.clear();
-
+        for(Player online : Bukkit.getOnlinePlayers()) {
+            online.setScoreboard(Kozyosen_plugin.board);
+        }
 
     }
 
